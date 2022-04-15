@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>students</title>
+</head>
+
+<body>
+<form action = "/student-data" method = "POST">
+<p>
+<label for = "fioTextBox">ФИО:</label>
+<input id = "fioTextBox" name = "fio" type = "text">
+</p>
+<p>
+<label for = "birthDay">Дата рождения:</label>
+<input id = "birthDay" name = "dateOfBirth" type = "date" value = "1983-07-22">
+</p>
+<p>
+<label>
+Пол:
+<select name = "gender">
+<option value = "1" selected>мужчина</option>
+<option value = "2">женщина</option>
+</select>
+</label> 
+</p>
+<input type = "submit" value = "Добавить">
+</form>
+
+<table cellpadding = "10" border = "1">
+
+<thead>
+<tr>
+<td>ФИО</td>
+<td>Пол</td>
+<td>Дата рождения</td>
+<td>Возраст</td>
+</tr>
+<tr> 
+<td colspan = "4">&nbsp;</td> 
+</tr> 
+</thead>
+
+<tbody>
+<tr>
+<td>Фитисов Алексей Владимирович</td>
+<td>мужчина</td>
+<td>22.07.1983</td>
+<td>38</td>
+</tr>
+<tr> 
+<td colspan = "4">&nbsp;</td>
+</tr> 
+</tbody>
+
+<tfoot>
+<tr>
+<td>Средний возраст:</td>
+<td>38</td>
+</tr> 
+</tfoot>
+</body>
+</html>

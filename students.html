@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>students</title>
+    <script type="text/javascript" src="students.js"></script>
+</head>
+
+<body>
+<form action="/student-data" method="POST">
+    <p>
+        <label for="fullName">ФИО:</label>
+        <input id="fullName" name="fullName" type="text">
+    </p>
+    <p>
+        <label>
+            Пол:
+            <select name="gender" id="gender">
+                <option value="мужчина" selected>мужчина</option>
+                <option value="женщина">женщина</option>
+            </select>
+        </label>
+    </p>
+    <p>
+        <label for="dateOfBirth">Дата рождения:</label>
+        <input id="dateOfBirth" name="dateOfBirth" type="date">
+    </p>
+    <input type="button" value="Добавить" onclick="addStudent()">
+</form>
+
+<table id="studentsTable" cellpadding="10" border="1">
+
+    <thead>
+    <tr>
+        <td>ФИО</td>
+        <td>Пол</td>
+        <td>Дата рождения</td>
+        <td>Возраст</td>
+    </tr>
+    </thead>
+
+    <tbody>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td colspan="4">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>Средний возраст:</td>
+        <td id="averageAge"></td>
+    </tr>
+    </tfoot>
+</table>
+</body>
+</html>
